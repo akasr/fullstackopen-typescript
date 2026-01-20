@@ -7,3 +7,9 @@ export const patientSchema = z.object({
   gender: z.string(),
   occupation: z.string()
 });
+
+export const entrySchema = z.object({
+  description: z.string(),
+  date: z.string().date(),
+  specialist: z.string(),
+});
